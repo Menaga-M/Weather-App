@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,31 +7,59 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="main-content" >
+    <div class="page-shell">
         {{>header}}
-        <article class="widget">
-            <form action="" class="weatherLocation">
-                <input type="text" class="input-field" placeholder="Enter City Name" required>
-                <button class="search-button">Search</button>
-            </form>
-            <div class="center-area">
-                <div class="icon-and-weather-info">
-                    <div class="weatherIcon">
-                        <i></i>
-                    </div>
-                    <div class="weatherInfo">
-                        <div class="temperature">
-                            <span></span>
+
+        <main class="hero-card">
+            <section class="hero-copy">
+                <p class="eyebrow">Live weather at a glance</p>
+                <h1>Plan your day with confidence.</h1>
+                <p class="hero-text">Check the weather in seconds with a polished, easy-to-read forecast for any city.</p>
+            </section>
+
+            <section class="weather-panel">
+                <form class="weatherLocation">
+                    <label class="sr-only" for="cityInput">City name</label>
+                    <input id="cityInput" type="text" class="input-field" placeholder="Enter a city name" required>
+                    <button class="search-button" type="submit">Check Weather</button>
+                </form>
+
+                <div class="forecast-card">
+                    <div class="summary-row">
+                        <div class="weatherIcon">
+                            <i class="wi wi-day-cloudy"></i>
                         </div>
-                        <div class="weatherCondition"></div>
+                        <div class="weatherInfo">
+                            <div class="temperature">
+                                <span>--</span>
+                            </div>
+                            <div class="weatherCondition">Waiting for forecast</div>
+                        </div>
+                    </div>
+
+                    <div class="place">Fetching your local weather...</div>
+                    <div class="date"></div>
+                    <p class="status-message">Search for a city or allow location access for instant updates.</p>
+
+                    <div class="weather-stats">
+                        <div class="stat-card">
+                            <span class="stat-label">Humidity</span>
+                            <span class="stat-value" data-stat="humidity">--</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Wind</span>
+                            <span class="stat-value" data-stat="wind">--</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Feels like</span>
+                            <span class="stat-value" data-stat="feelsLike">--</span>
+                        </div>
                     </div>
                 </div>
-                <div class="place"></div>
-                <div class="date"></div>
-            </div>
-        </article>
+            </section>
+        </main>
     </div>
-    
+
     <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>

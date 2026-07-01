@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +7,14 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <div class="main-content" >
+    <div class="page-shell">
         {{>header}}
+        <main class="hero-card error-card">
+            <p class="eyebrow">404</p>
+            <h1>That page is not available.</h1>
+            <p class="hero-text">The page you were looking for may have moved or no longer exists. Head back home and try again.</p>
+            <a class="search-button" href="/">Return Home</a>
+        </main>
     </div>
 </body>
 </html>
