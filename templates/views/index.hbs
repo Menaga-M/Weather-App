@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main-content" >
+        {{>header}}
+        <article class="widget">
+            <form action="" class="weatherLocation">
+                <input type="text" class="input-field" placeholder="Enter City Name" required>
+                <button class="search-button">Search</button>
+            </form>
+            <div class="icon-and-weather-info">
+                <div class="weatherIcon">
+                    <i></i>
+                </div>
+                <div class="weatherInfo">
+                    <div class="temperature">
+                        <span></span>
+                    </div>
+                    <div class="weatherCondition"></div>
+                </div>
+            </div>
+            <div class="place"></div>
+            <div class="date"></div>
+        </article>
+    </div>
+    
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

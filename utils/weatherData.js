@@ -18,5 +18,7 @@ const weatherData = (address, callback) => {
         } else {
             callback(false,data?.body);
         }
-     })
-}
+     });
+};
+
+module.exports = weatherData;
