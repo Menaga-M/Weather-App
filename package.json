@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "start": "nodemon src/app.js"
+    "start": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "hbs": "^4.2.1",
     "nodemon": "^3.1.14",
