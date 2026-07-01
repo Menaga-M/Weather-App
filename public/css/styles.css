@@ -38,6 +38,12 @@ h2 {
   cursor: pointer;
   border-radius: 20px;
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 1.5rem;
 }
 
 .weatherLocation{
@@ -84,12 +90,20 @@ h2 {
   height: 40px;
   border-radius: 50px;
 }
+.center-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .icon-and-weatherInfo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 50px;
 }
 .temperature {
   font-size: 55px;
@@ -98,7 +112,7 @@ h2 {
 .place {
   text-align: center;
   font-size: 35px;
-  margin-top: 70px;
+  margin: 0;
   color: white;
 }
 .weatherCondition {
@@ -107,7 +121,6 @@ h2 {
 .date {
   text-align: center;
   font-size: 20px;
-  margin-top: 20px;
+  margin: 0;
   color: white;
-
 }
